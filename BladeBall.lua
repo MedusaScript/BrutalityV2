@@ -1,1 +1,114 @@
-local v0=tonumber;local v1=string.byte;local v2=string.char;local v3=string.sub;local v4=string.gsub;local v5=string.rep;local v6=table.concat;local v7=table.insert;local v8=math.ldexp;local v9=getfenv or function() return _ENV;end ;local v10=setmetatable;local v11=pcall;local v12=select;local v13=unpack or table.unpack ;local v14=tonumber;local function v15(v16,v17,...) local v18=1;local v19;v16=v4(v3(v16,5),"..",function(v30) if (v1(v30,2)==79) then v19=v0(v3(v30,1,1));return "";else local v81=0;local v82;while true do if (0==v81) then v82=v2(v0(v30,16));if v19 then local v103=v5(v82,v19);v19=nil;return v103;else return v82;end break;end end end end);local function v20(v31,v32,v33) if v33 then local v83=0 -0 ;local v84;while true do if (v83==(0 -(1637 -(1523 + 114)))) then v84=(v31/(2^(v32-(1 -0))))%((4 -2)^(((v33-(620 -(555 + 64))) -(v32-(932 -(857 + 74)))) + (569 -(330 + 37 + 201)))) ;return v84-(v84%((1322 -394) -(214 + 713))) ;end end else local v85=(1 + 1)^(v32-1) ;return (((v31%(v85 + v85))>=v85) and (1 + 0)) or (877 -(282 + 595)) ;end end local function v21() local v34=v1(v16,v18,v18);v18=v18 + 1 ;return v34;end local function v22() local v35,v36=v1(v16,v18,v18 + (1067 -(68 + 997)) );v18=v18 + (1272 -(226 + 1044)) ;return (v36 * (1114 -858)) + v35 ;end local function v23() local v37=117 -(32 + 85) ;local v38;local v39;local v40;local v41;while true do if (v37==(1 + 0)) then return (v41 * (3720433 + 13056783)) + (v40 * (66493 -(892 + 65))) + (v39 * (610 -354)) + v38 ;end if (v37==0) then v38,v39,v40,v41=v1(v16,v18,v18 + (5 -2) );v18=v18 + ((187 -(67 + 113)) -3) ;v37=351 -(87 + 193 + 70) ;end end end local function v24() local v42=0 -0 ;local v43;local v44;local v45;local v46;local v47;local v48;while true do if (v42==(0 + 0)) then v43=v23();v44=v23();v42=1;end if (v42==(7 -5)) then v47=v20(v44,21,983 -(802 + 150) );v48=((v20(v44,85 -53 )==(1 -0)) and  -(1 + 0)) or ((1436 -(145 + 293)) -(915 + 82)) ;v42=(438 -(44 + 386)) -5 ;end if (v42==1) then v45=(1487 -(998 + 488)) + 0 ;v46=(v20(v44,1 -(0 + 0) ,20) * ((1189 -(876 + 193 + 118))^(72 -40))) + v43 ;v42=3 -1 ;end if (v42==(1 + 2)) then if (v47==0) then if (v46==(0 -0)) then return v48 * (0 + 0) ;else v47=792 -(368 + 423) ;v45=0 -0 ;end elseif (v47==(2065 -(10 + 8))) then return ((v46==(0 -0)) and (v48 * ((443 -(416 + 26))/0))) or (v48 * NaN) ;end return v8(v48,v47-(3266 -2243) ) * (v45 + (v46/((1 + 1)^(91 -(811 -(201 + 571)))))) ;end end end local function v25(v49) local v50;if  not v49 then v49=v23();if (v49==(1138 -(116 + 1022))) then return "";end end v50=v3(v16,v18,(v18 + v49) -(4 -3) );v18=v18 + v49 ;local v51={};for v65=1 + 0 , #v50 do v51[v65]=v2(v1(v3(v50,v65,v65)));end return v6(v51);end local v26=v23;local function v27(...) return {...},v12("#",...);end local function v28() local v52=1262 -(1091 + 171) ;local v53;local v54;local v55;local v56;local v57;local v58;while true do if (v52==(1 + 0)) then local v89=0 -0 ;local v90;while true do if (v89==(1456 -(282 + 1174))) then v90=0 -0 ;while true do if (v90~=(374 -(123 + 251))) then else v57=v23();v58={};v90=4 -3 ;end if (v90~=(700 -(208 + 490))) then else v52=1 + 1 ;break;end if (v90~=(1 + 0)) then else for v108=1,v57 do local v109=0;local v110;local v111;while true do if (v109==(837 -(660 + 176))) then if (v110==(1 + 0)) then v111=v21()~=(202 -(14 + 188)) ;elseif (v110==(677 -(534 + 141))) then v111=v24();elseif (v110==(2 + 1)) then v111=v25();end v58[v108]=v111;break;end if ((0 + 0)~=v109) then else local v146=0 + 0 ;local v147;while true do if ((1251 -(721 + 530))==v146) then v147=0 -0 ;while true do if (v147~=(0 -0)) then else v110=v21();v111=nil;v147=1;end if (v147==1) then v109=2 -1 ;break;end end break;end end end end end end v56[3]=v21();v90=5 -3 ;end end break;end end end if ((2 + 0)~=v52) then else for v93=1 + 0 ,v23() do local v94=0 + 0 ;local v95;local v96;while true do if (v94~=(1 + 0)) then else while true do if (v95==(396 -(115 + 281))) then v96=v21();if (v20(v96,2 -1 ,1 + 0 )==(0 -0)) then local v140=1086 -(461 + 625) ;local v141;local v142;local v143;local v144;while true do if (v140~=(0 -0)) then else v141=867 -(550 + 317) ;v142=nil;v140=1;end if (v140~=(1 + 1)) then else while true do if (v141~=(2 -0)) then else local v166=0 + 0 ;local v167;while true do if (v166~=(0 + 0)) then else v167=0;while true do if (v167~=(1 -0)) then else v141=3;break;end if (v167~=(0 + 0)) then else if (v20(v143,530 -(406 + 123) ,2 -1 )~=(1770 -(1749 + 20))) then else v144[1 + 1 ]=v58[v144[1324 -(1249 + 73) ]];end if (v20(v143,1 + 1 ,2)==(286 -(134 + 151))) then v144[3]=v58[v144[3]];end v167=166
+local tonumber = tonumber
+local string_byte = string.byte
+local string_char = string.char
+local string_sub = string.sub
+local string_gsub = string.gsub
+local string_rep = string.rep
+local table_concat = table.concat
+local table_insert = table.insert
+local math_ldexp = math.ldexp
+local getfenv = getfenv or function() return _ENV end
+local setmetatable = setmetatable
+local pcall = pcall
+local select = select
+local unpack = unpack or table.unpack
+local tonumber = tonumber
+
+local function decode(encoded_str, init_val, ...)
+    local index = 1
+    local temp_var
+
+    encoded_str = string_gsub(string_sub(encoded_str, 5), "%.%.", function(char)
+        if (string_byte(char, 2) == 79) then
+            temp_var = tonumber(string_sub(char, 1, 1))
+            return ""
+        else
+            local char_val = string_char(tonumber(char, 16))
+            if temp_var then
+                local repeated_char = string_rep(char_val, temp_var)
+                temp_var = nil
+                return repeated_char
+            else
+                return char_val
+            end
+        end
+    end)
+
+    local function read_byte()
+        local byte_val = string_byte(encoded_str, index, index)
+        index = index + 1
+        return byte_val
+    end
+
+    local function read_short()
+        local byte1, byte2 = string_byte(encoded_str, index, index + 1)
+        index = index + 2
+        return (byte2 * 256) + byte1
+    end
+
+    local function read_int()
+        local byte1, byte2, byte3, byte4 = string_byte(encoded_str, index, index + 3)
+        index = index + 4
+        return (byte4 * 16777216) + (byte3 * 65536) + (byte2 * 256) + byte1
+    end
+
+    local function read_float()
+        local mantissa, exponent = read_int(), read_int()
+        local sign = (mantissa > 0x7FFFFFFF and -1 or 1)
+        if sign == -1 then mantissa = mantissa - 0x80000000 end
+        if exponent == 0 then
+            if mantissa == 0 then
+                return sign * 0
+            else
+                exponent = 1
+            end
+        elseif exponent == 255 then
+            if mantissa == 0 then
+                return sign * math.huge
+            else
+                return sign * (0 / 0)
+            end
+        end
+        return math_ldexp(sign, exponent - 127) * (1 + mantissa / 0x800000)
+    end
+
+    local function read_string(length)
+        if not length then
+            length = read_int()
+            if length == 0 then return "" end
+        end
+        local str = string_sub(encoded_str, index, index + length - 1)
+        index = index + length
+        local char_table = {}
+        for i = 1, #str do
+            table_insert(char_table, string_char(string_byte(string_sub(str, i, i))))
+        end
+        return table_concat(char_table)
+    end
+
+    local decode_int = read_int
+    local function read_varargs(...)
+        return {...}, select("#", ...)
+    end
+
+    local function process()
+        local values_count = read_int()
+        local values = {}
+        for i = 1, values_count do
+            local var_type = read_byte()
+            local var_value
+            if var_type == 1 then
+                var_value = read_byte() ~= 0
+            elseif var_type == 2 then
+                var_value = read_float()
+            elseif var_type == 3 then
+                var_value = read_string()
+            end
+            values[i] = var_value
+        end
+
+        return values
+    end
+
+    return process
+end
