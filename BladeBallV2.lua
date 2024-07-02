@@ -204,6 +204,6 @@ Balls.ChildAdded:Connect(function(ball)
 end)
 end)
 
-KillingCheats:CreateButton("Made by Medusa", function()
+KillingCheats:CreateButton("By Medusa Script", function()
 print("https://discord.gg/medusascript")
 end)
