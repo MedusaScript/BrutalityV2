@@ -1,5 +1,5 @@
 local SlayerzUI_MobileToggle = loadstring(game:HttpGet("https://raw.githubusercontent.com/x2-Neptune/SlayerzUI/main/MBToggle.script"))()
-SlayerzUI_MobileToggle:Create("rbxassetid://15110884615")
+SlayerzUI_MobileToggle:Create("rbxassetid://16058297648")
 repeat wait(1) until game:IsLoaded()
 local AlchemyHub_Version = "2.4 [ Free ]"
 local AlchemyHub_UserCalling = game.Players.LocalPlayer.Name
@@ -7,10 +7,10 @@ local textchange_cooldown = 3
 local Alchemy_GameName = "Blox Fruits"
 local AlchemyNotify = function(Text_i,Duration_i)
     game.StarterGui:SetCore("SendNotification", {
-        Title = "Alchemy Hub V2",
+        Title = "Medusa Script",
         Text = Text_i,
         Duration = Duration_i,
-        Icon = "rbxassetid://14981376704"
+        Icon = "rbxassetid://16058297648"
     })
 end
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ZoiIntra/AlchemyHub/main/InviteToDiscord.lua"))()
@@ -104,7 +104,7 @@ Logo.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Logo.BorderSizePixel = 0
 Logo.Position = UDim2.new(0.217777774, 0, -0.0949999988, 0)
 Logo.Size = UDim2.new(0, 250, 0, 250)
-Logo.Image = "rbxassetid://14981376704"
+Logo.Image = "rbxassetid://16058297648"
 Logo.ImageTransparency = 0.300
 Name.Name = "Name"
 Name.Parent = MainFrame
@@ -153,7 +153,7 @@ Credit.ClipsDescendants = true
 Credit.Position = UDim2.new(0.0222222228, 0, 0.894999981, 0)
 Credit.Size = UDim2.new(0, 432, 0, 21)
 Credit.Font = Enum.Font.GothamBold
-Credit.Text = "UI By Alchemy.xy"
+Credit.Text = "UI By Medusa"
 Credit.TextColor3 = Color3.fromRGB(255, 255, 255)
 Credit.TextSize = 16.000
 Credit.TextTransparency = 0.500
