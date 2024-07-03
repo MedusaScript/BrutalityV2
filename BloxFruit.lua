@@ -1,5 +1,5 @@
 local SlayerzUI_MobileToggle = loadstring(game:HttpGet("https://raw.githubusercontent.com/x2-Neptune/SlayerzUI/main/MBToggle.script"))()
-SlayerzUI_MobileToggle:Create("rbxassetid://18322641962")
+SlayerzUI_MobileToggle:Create("rbxassetid://16058297648")
 repeat wait(1) until game:IsLoaded()
 local AlchemyHub_Version = "2.4 [ Free ]"
 local AlchemyHub_UserCalling = game.Players.LocalPlayer.Name
@@ -10,7 +10,7 @@ local AlchemyNotify = function(Text_i,Duration_i)
         Title = "Medusa Script",
         Text = Text_i,
         Duration = Duration_i,
-        Icon = "rbxassetid://18322641962"
+        Icon = "rbxassetid://16058297648"
     })
 end
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ZoiIntra/AlchemyHub/main/InviteToDiscord.lua"))()
@@ -22,7 +22,7 @@ if not game:IsLoaded()then
 	print("Wait...")
 end
 UIThemeColorSave = Color3.fromRGB(0, 255, 145)
-LOGOAlchemyLOL = "https://create.roblox.com/store/asset/18322641962"
+LOGOAlchemyLOL = "rbxassetid://16058297648"
 _G.Config_AlchemyUI = {
     KeyBind = Enum.KeyCode.Delete
 }
@@ -104,7 +104,7 @@ Logo.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Logo.BorderSizePixel = 0
 Logo.Position = UDim2.new(0.217777774, 0, -0.0949999988, 0)
 Logo.Size = UDim2.new(0, 250, 0, 250)
-Logo.Image = "rbxassetid://18322641962"
+Logo.Image = "rbxassetid://16058297648"
 Logo.ImageTransparency = 0.300
 Name.Name = "Name"
 Name.Parent = MainFrame
@@ -258,7 +258,7 @@ Premium.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Premium.BorderSizePixel = 0
 Premium.Position = UDim2.new(0.200000003, 0, 0.200000003, 0)
 Premium.Size = UDim2.new(0, 30, 0, 30)
-Premium.Image = "rbxassetid://3057073083"
+Premium.Image = "rbxassetid://16058297648"
 
 -- Panda Authenticating System
 local LibVersion = "v2" -- ( v3 & v4 )
@@ -432,7 +432,7 @@ local SlayerzLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.co
 
 local Name = "Brutality V1 | Blox Fruits"
 local Description = "Version : 1.0 [ Free ] | User : "..game.Players.LocalPlayer.Name.." Toggle : Del"
-local Image = "rbxassetid://18322439556"
+local Image = "rbxassetid://16058297648"
 local Color = Color3.fromRGB(0, 255, 145)
 
 local Window = SlayerzLibrary:Window(Name,Description,Image,Color)
