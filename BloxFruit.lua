@@ -1,3 +1,5 @@
+local SlayerzUI_MobileToggle = loadstring(game:HttpGet("https://raw.githubusercontent.com/x2-Neptune/SlayerzUI/main/MBToggle.script"))()
+SlayerzUI_MobileToggle:Create("rbxassetid://15110884615")
 repeat wait(1) until game:IsLoaded()
 local AlchemyHub_Version = "2.4 [ Free ]"
 local AlchemyHub_UserCalling = game.Players.LocalPlayer.Name
