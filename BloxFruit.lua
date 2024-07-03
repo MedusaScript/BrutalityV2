@@ -1,5 +1,5 @@
 local SlayerzUI_MobileToggle = loadstring(game:HttpGet("https://raw.githubusercontent.com/x2-Neptune/SlayerzUI/main/MBToggle.script"))()
-SlayerzUI_MobileToggle:Create("rbxassetid://18322439556")
+SlayerzUI_MobileToggle:Create("rbxassetid://18322641962")
 repeat wait(1) until game:IsLoaded()
 local AlchemyHub_Version = "2.4 [ Free ]"
 local AlchemyHub_UserCalling = game.Players.LocalPlayer.Name
@@ -10,7 +10,7 @@ local AlchemyNotify = function(Text_i,Duration_i)
         Title = "Medusa Script",
         Text = Text_i,
         Duration = Duration_i,
-        Icon = "rbxassetid://18322439556"
+        Icon = "rbxassetid://18322641962"
     })
 end
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ZoiIntra/AlchemyHub/main/InviteToDiscord.lua"))()
@@ -22,7 +22,7 @@ if not game:IsLoaded()then
 	print("Wait...")
 end
 UIThemeColorSave = Color3.fromRGB(0, 255, 145)
-LOGOAlchemyLOL = "http://www.roblox.com/asset/?id=14981376704"
+LOGOAlchemyLOL = "https://create.roblox.com/store/asset/18322641962"
 _G.Config_AlchemyUI = {
     KeyBind = Enum.KeyCode.Delete
 }
@@ -104,7 +104,7 @@ Logo.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Logo.BorderSizePixel = 0
 Logo.Position = UDim2.new(0.217777774, 0, -0.0949999988, 0)
 Logo.Size = UDim2.new(0, 250, 0, 250)
-Logo.Image = "rbxassetid://16058297648"
+Logo.Image = "rbxassetid://18322641962"
 Logo.ImageTransparency = 0.300
 Name.Name = "Name"
 Name.Parent = MainFrame
@@ -277,7 +277,7 @@ end
 spawn(function()
 	pcall(function()
 		while wait(1) do
-            Name.Text = "Alchemy Hub"
+            Name.Text = "MedusaScript"
             Description.Text = "Free Script Hub Support PC/Mobile with Many Function Smooth High Perfomance And Anit Detection !"
             Credit.Text = " UI By x2Neptune"
             Logo.Image = LOGOAlchemyLOL
@@ -424,13 +424,13 @@ wait(0.1)
 AlchemyNotify("discord.gg/medusascript",5)
 wait(0.5)
 local Notification = require(game:GetService("ReplicatedStorage").Notification)
-Notification.new("<Color=Cyan>Medusa Script V 1.0<Color=/>"):Display()
+Notification.new("<Color=Cyan>Brutality V 1.0<Color=/>"):Display()
 wait(0.5)
 Notification.new("<Color=Yellow>Please Subscribe Medusa Script<Color=/>"):Display()
 wait(1)
 local SlayerzLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/x2-Neptune/SlayerzUI/main/Library.script"))()
 
-local Name = "Medusa Script | Blox Fruits"
+local Name = "Brutality V1 | Blox Fruits"
 local Description = "Version : 1.0 [ Free ] | User : "..game.Players.LocalPlayer.Name.." Toggle : Del"
 local Image = "rbxassetid://18322439556"
 local Color = Color3.fromRGB(0, 255, 145)
