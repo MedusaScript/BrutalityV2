@@ -426,7 +426,7 @@ wait(0.5)
 local Notification = require(game:GetService("ReplicatedStorage").Notification)
 Notification.new("<Color=Cyan>Medusa Script V 1.0<Color=/>"):Display()
 wait(0.5)
-Notification.new("<Color=Yellow>Create By Famzz Or Asdask<Color=/>"):Display()
+Notification.new("<Color=Yellow>Jangan Lupa Subscribe Medusa Script Ya<Color=/>"):Display()
 wait(1)
 local SlayerzLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/x2-Neptune/SlayerzUI/main/Library.script"))()
 
