@@ -1,5 +1,5 @@
 local SlayerzUI_MobileToggle = loadstring(game:HttpGet("https://raw.githubusercontent.com/x2-Neptune/SlayerzUI/main/MBToggle.script"))()
-SlayerzUI_MobileToggle:Create("rbxassetid://16058297648")
+SlayerzUI_MobileToggle:Create("rbxassetid://18322439556")
 repeat wait(1) until game:IsLoaded()
 local AlchemyHub_Version = "2.4 [ Free ]"
 local AlchemyHub_UserCalling = game.Players.LocalPlayer.Name
@@ -10,7 +10,7 @@ local AlchemyNotify = function(Text_i,Duration_i)
         Title = "Medusa Script",
         Text = Text_i,
         Duration = Duration_i,
-        Icon = "rbxassetid://16058297648"
+        Icon = "rbxassetid://18322439556"
     })
 end
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ZoiIntra/AlchemyHub/main/InviteToDiscord.lua"))()
@@ -426,13 +426,13 @@ wait(0.5)
 local Notification = require(game:GetService("ReplicatedStorage").Notification)
 Notification.new("<Color=Cyan>Medusa Script V 1.0<Color=/>"):Display()
 wait(0.5)
-Notification.new("<Color=Yellow>Jangan Lupa Subscribe Medusa Script Ya<Color=/>"):Display()
+Notification.new("<Color=Yellow>Please Subscribe Medusa Script<Color=/>"):Display()
 wait(1)
 local SlayerzLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/x2-Neptune/SlayerzUI/main/Library.script"))()
 
 local Name = "Medusa Script | Blox Fruits"
 local Description = "Version : 1.0 [ Free ] | User : "..game.Players.LocalPlayer.Name.." Toggle : Del"
-local Image = "rbxassetid://16058297648"
+local Image = "rbxassetid://18322439556"
 local Color = Color3.fromRGB(0, 255, 145)
 
 local Window = SlayerzLibrary:Window(Name,Description,Image,Color)
