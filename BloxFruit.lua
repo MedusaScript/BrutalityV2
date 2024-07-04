@@ -13,7 +13,6 @@ local AlchemyNotify = function(Text_i,Duration_i)
         Icon = "rbxassetid://16058297648"
     })
 end
-local SlayerzUI_Notify = loadstring(game:HttpGet("https://raw.githubusercontent.com/x2-Neptune/SlayerzUI/main/Notification.script"))()
 local NameHub = "Medusa Script"
 local Description = "Thanks For Using, maker from Indonesia!"
 local Logo = "rbxassetid://16058297648"
