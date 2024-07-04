@@ -1,7 +1,8 @@
+-- Skid = Mati Nya Ga Di Terima Sama Maha Kuasa
 local SlayerzUI_MobileToggle = loadstring(game:HttpGet("https://raw.githubusercontent.com/x2-Neptune/SlayerzUI/main/MBToggle.script"))()
-SlayerzUI_MobileToggle:Create("rbxassetid://16058297648")
+SlayerzUI_MobileToggle:Create("rbxassetid://16058297648") -- Inget Tuh Tai
 repeat wait(1) until game:IsLoaded()
-local AlchemyHub_Version = "1.0 [ Free ]"
+local AlchemyHub_Version = "2.4 [ Free ]"
 local AlchemyHub_UserCalling = game.Players.LocalPlayer.Name
 local textchange_cooldown = 3
 local Alchemy_GameName = "Blox Fruits"
@@ -13,6 +14,7 @@ local AlchemyNotify = function(Text_i,Duration_i)
         Icon = "rbxassetid://16058297648"
     })
 end
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MedusaScript/Brutality-V2/main/InviteToDiscord.lua"))()
 _G.AlchemyHub_KeySystem = {
 	KeySaved = "IDK"
 }
@@ -21,7 +23,7 @@ if not game:IsLoaded()then
 	print("Wait...")
 end
 UIThemeColorSave = Color3.fromRGB(0, 255, 145)
-LOGOAlchemyLOL = "rbxassetid://16058297648"
+LOGOAlchemyLOL = "http://www.roblox.com/asset/?id=14981376704"
 _G.Config_AlchemyUI = {
     KeyBind = Enum.KeyCode.Delete
 }
