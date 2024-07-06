@@ -17,7 +17,7 @@ local RunService = game:GetService('RunService')
 local ReplicatedStorage = game:GetService('ReplicatedStorage')
 local TweenService = game:GetService('TweenService')
 
-local Nurysium_Util = loadstring(game:HttpGet('https://raw.githubusercontent.com/MedusaScript/limitless-medusa/main/bb.ui'))()
+local Nurysium_Util = loadstring(game:HttpGet('https://raw.githubusercontent.com/MedusaScript/limitless-medusa/main/bb%20uhui'))()
 
 local local_player = Players.LocalPlayer
 local camera = workspace.CurrentCamera
