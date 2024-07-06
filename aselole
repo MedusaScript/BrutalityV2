@@ -1,8 +1,8 @@
---// medusa recode
+--// nurysium recode
 
 local version = '0.3'
 
-print('nurysium llc. - https://discord.gg/medusascript')
+print('nurysium llc. - https://dsc.gg/nurysium')
 print(version)
 print('ahem security bypassed')
 
@@ -47,7 +47,7 @@ local Services = {
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/MedusaScript/BrutalityV2/main/uibb"))()
 task.wait(0.25)
 
---// Rename Mandul 🌠
+--// Yes, you can rename, I don't mind 🌠
 library:init("Brutality " ..version, game:GetService("UserInputService").TouchEnabled, game:GetService("CoreGui"))
 
 library:create_section("Combat", 17440545793)
@@ -61,7 +61,7 @@ function initializate(dataFolder_name: string)
 
 	hit_Sound = Instance.new('Sound', nurysium_Data)
 	hit_Sound.SoundId = 'rbxassetid://6607204501'
-	hit_Sound.Volume = 1
+	hit_Sound.Volume = 6
 end
 
 local function get_closest_entity(Object: Part)
@@ -248,8 +248,8 @@ library:create_toggle("Infinite Jump", "Misc", function(toggled)
 end)
 
 library:create_toggle("Discord Invite", "Misc", function(toggle)
-	setclipboard("https://discord.gg/medusascript")
-	toclipboard("https://discord.gg/medusascript")
+	setclipboard("https://discord.gg/q93X9YuvBD")
+	toclipboard("https://discord.gg/q93X9YuvBD")
 end)
 
 --// kill effect
