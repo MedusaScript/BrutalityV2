@@ -1,7 +1,7 @@
 -- Skid Mati Amin
 local SlayerzUI_Notify = loadstring(game:HttpGet("https://raw.githubusercontent.com/x2-Neptune/SlayerzUI/main/Notification.script"))()
 local NameHub = "Medusa Script"
-local Description = "thankyou for using ours script!, Made By Medusa Script"
+local Description = "THIS IS BRUTALITY!, Made By Medusa Script"
 local Logo = "rbxassetid://16058297648"
 local Color = Color3.fromRGB(0, 255, 145)
 SlayerzUI_Notify:Notify(NameHub, Description, Logo, Color, 5)
