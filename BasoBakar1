@@ -408,7 +408,7 @@ function Update:Window(text,logo,keybind)
   --  UserImage.BackgroundColor3 = Color3.fromRGB(225, 225, 225)
     UserImage.Position = UDim2.new(0, 10, 0, -15)
     UserImage.Size = UDim2.new(0, 25, 0, 25)
-    UserImage.Image = "rbxassetid://15815733731"
+    UserImage.Image = "rbxassetid://18322439556"
     local UserImageCorner = Instance.new("UICorner")
     UserImageCorner.CornerRadius = UDim.new(0, 100)
     UserImageCorner.Name = "UserImageCorner"
@@ -421,7 +421,7 @@ function Update:Window(text,logo,keybind)
 	Logo.BackgroundTransparency = 1.000
 	Logo.Position = UDim2.new(0, -5, 0, -5)
 	Logo.Size = UDim2.new(0, 135, 0, 135)
-	Logo.Image = "rbxassetid://15815733731"
+	Logo.Image = "rbxassetid://18322439556"
     local Tab = Instance.new("Frame")
     Tab.Name = "Tab"
     Tab.Parent = Main
@@ -3841,22 +3841,22 @@ local D = Library:AddTab("Devil Fruit","4483345998")
 local Misc = Library:AddTab("Misc","4483345998")
 --- ThÃ´ng Tin
 NguyenTien:AddSeperator("Information Developer")
-NguyenTien:AddLabel("Owner: Bstory IOS")
-NguyenTien:AddLabel("Support Code: Twin Erros ")
-NguyenTien:AddLabel("Ui: Thunderz Hub")
+NguyenTien:AddLabel("Owner: Medusa Script")
+NguyenTien:AddLabel("Support Code: BOTUNA ")
+NguyenTien:AddLabel("Ui: Bocah Tua Nakal")
 NguyenTien:AddLabel("Thank You For Assisting Me With The\n Script Interface!")
 
-NguyenTien:AddSeperator("Social Network")
+NguyenTien:AddSeperator("Join Community")
 NguyenTien:AddButton("Discord Sever",function()
-setclipboard("https://discord.gg/RNmwmTvzWt")
+setclipboard("https://discord.gg/medusascript")
 Notif.New("Copying To Clipboard DoneðŸŽ‰", 3)
 end)
-NguyenTien:AddButton("YouTube Official",function()
-setclipboard("https://www.youtube.com/@BstoryYtb/featured")
+NguyenTien:AddButton("YouTube Medusa Script",function()
+setclipboard("www.youtube.com/@medusascriptroblox")
 Notif.New("Copying To Clipboard DoneðŸŽ‰", 3)
 end)
-NguyenTien:AddButton("Facebook Official Owner",function()
-setclipboard("https://www.facebook.com/bstoryy")
+NguyenTien:AddButton("Instagram Official Owner",function()
+setclipboard("https://www.instagram.com/medusafrzly/")
 Notif.New("Copying To Clipboard DoneðŸŽ‰", 3)
 end)
 ---- Trang Chá»§
