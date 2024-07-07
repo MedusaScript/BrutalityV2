@@ -431,7 +431,7 @@ Notification.new("<Color=Yellow>Please Subscribe Medusa Script<Color=/>"):Displa
 wait(1)
 local SlayerzLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/x2-Neptune/SlayerzUI/main/Library.script"))()
 
-local Name = "Brutality V1 | Blox Fruits"
+local Name = "Brutality | Blox Fruits"
 local Description = "Version : 1.0 [ Free ] | User : "..game.Players.LocalPlayer.Name.." Toggle : Del"
 local Image = "rbxassetid://16058297648"
 local Color = Color3.fromRGB(0, 255, 145)
