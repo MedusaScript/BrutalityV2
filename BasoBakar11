@@ -886,7 +886,7 @@ function Update:Window(text,logo,keybind)
     function main:AddToggle(TogInfo ,default, callback)
         local toggle = false
         if logo == nil then
-            logo = "15009422255"
+            logo = "rbxassetid://16058297648"
         end
         local CheckFrame = Instance.new("Frame")
         local CheckFrame2 = Instance.new("Frame")
