@@ -383,7 +383,7 @@ function Update:Window(text,logo,keybind)
     User.Size = UDim2.new(0, 125, 0, 40)
     
     local UserText = Instance.new("TextLabel")
-    UserText.Name = "Medusa Script"
+    UserText.Name = "UserText"
     UserText.Parent = User
     UserText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     UserText.BackgroundTransparency = 1.000
