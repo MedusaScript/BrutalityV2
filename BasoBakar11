@@ -367,7 +367,7 @@ function Update:Window(text,logo,keybind)
     Ping.Position = UDim2.new(0.28, 0,0.074, 0)
     Ping.Size = UDim2.new(0, 225, 0, 25)
     Ping.Font = Enum.Font.GothamSemibold
-    Ping.Text = "BRUTALITY | Blox Fruit | By Medusa Script        [RightControl]"
+    Ping.Text = "BRUTALITY V3| Made By Medusa Script        [PREMIUM]"
     Ping.TextColor3 = Color3.fromRGB(9, 255, 0)
     Ping.TextSize = 14.000
     Ping.TextXAlignment = Enum.TextXAlignment.Left
@@ -5286,9 +5286,9 @@ end)
         pcall(function()
             while wait() do
     if game.Workspace._WorldOrigin.Locations:FindFirstChild('Mirage Island') then
-    Mirragecheck:Set('ðŸï¸: Mystic Island Spawning')
+    Mirragecheck:Set('🌖: Mystic Island Spawning')
     else
-      Mirragecheck:Set('âŒ: Mystic Island Not Found ' )end
+      Mirragecheck:Set('🌏: Mystic Island Not Found ' )end
             end
         end)
 end)
@@ -6749,9 +6749,9 @@ spawn(function()
     pcall(function()
         while wait() do
             if game.Workspace._WorldOrigin.Locations:FindFirstChild('Frozen Dimension') then
-                FrozenIsland:Set('âœ…: Frozen Dimension Spawning')
+                FrozenIsland:Set('🏔️: Frozen Dimension Spawning')
             else
-                FrozenIsland:Set('âŒ: Frozen Dimension Not Found')
+                FrozenIsland:Set('🌏: Frozen Dimension Not Found')
             end
         end
     end)
@@ -7872,7 +7872,7 @@ end)
                     elseif game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709149680" then
                         FM:Set("ðŸŒ–: Full Moon 15%")
                     else
-                        FM:Set("ðŸŒ•: Wait For Moon")
+                        FM:Set("🌒: Wait For Moon")
                     end
                 end)
             end
@@ -8664,9 +8664,9 @@ end)
 		while wait() do
 			pcall(function()
 				if game:GetService("ReplicatedStorage"):FindFirstChild("Diablo") or game:GetService("ReplicatedStorage"):FindFirstChild("Deandre") or game:GetService("ReplicatedStorage"):FindFirstChild("Urban") or game:GetService("Workspace").Enemies:FindFirstChild("Diablo") or game:GetService("Workspace").Enemies:FindFirstChild("Deandre") or game:GetService("Workspace").Enemies:FindFirstChild("Urban") then
-					Elite_Hunter_Status:Set("âœ…: Elite Spawn!")	
+					Elite_Hunter_Status:Set("👻: Elite Spawn!")	
 				else
-					Elite_Hunter_Status:Set("âŒ: Elite Not Spawn")	
+					Elite_Hunter_Status:Set("😭: Elite Not Spawn")	
 				end
 			end)
 		end
@@ -10809,7 +10809,7 @@ RaceV4:AddButton("Teleport To Lever Pull",function()
   HyperCahaya(CFrame.new(28575.181640625, 14936.6279296875, 72.31636810302734))
 end)
 
-RaceV4:AddButton("Teleport To Acient One (Must Be in Temple Of Time!)",function()
+RaceV4:AddButton("Teleport Acient One (Must Be Temple Of Time!)",function()
   HyperCahaya(CFrame.new(28981.552734375, 14888.4267578125, -120.245849609375))
 end)
    
@@ -11474,9 +11474,9 @@ end
         pcall(function()
             while wait() do
     if game.Workspace._WorldOrigin.Locations:FindFirstChild('Island 1') then
-    Island1:Set('âœ…: Island 1')
+    Island1:Set('🌴: Island 1')
     else
-      Island1:Set('âŒ: Island 1' )end
+      Island1:Set('🌴: Island 1' )end
             end
         end)
 end)
@@ -11485,9 +11485,9 @@ spawn(function()
         pcall(function()
             while wait() do
     if game.Workspace._WorldOrigin.Locations:FindFirstChild('Island 2') then
-    Island2:Set('âœ…: Island 2')
+    Island2:Set('🌴: Island 2')
     else
-      Island2:Set('âŒ: Island 2' )end
+      Island2:Set('🌴: Island 2' )end
             end
         end)
 end)
@@ -11496,9 +11496,9 @@ spawn(function()
         pcall(function()
             while wait() do
     if game.Workspace._WorldOrigin.Locations:FindFirstChild('Island 3') then
-    Island3:Set('âœ…: Island 3')
+    Island3:Set('🌴: Island 3')
     else
-      Island3:Set('âŒ: Island 3' )end
+      Island3:Set('🌴: Island 3' )end
             end
         end)
 end)
@@ -11507,9 +11507,9 @@ spawn(function()
         pcall(function()
             while wait() do
     if game.Workspace._WorldOrigin.Locations:FindFirstChild('Island 4') then
-    Island4:Set('âœ…: Island 4')
+    Island4:Set('🌴: Island 4')
     else
-      Island4:Set('âŒ: Island 4' )end
+      Island4:Set('🌴: Island 4' )end
             end
         end)
 end)
@@ -11518,9 +11518,9 @@ spawn(function()
         pcall(function()
             while wait() do
     if game.Workspace._WorldOrigin.Locations:FindFirstChild('Island 5') then
-    Island5:Set('âœ…: Island 5')
+    Island5:Set('🌴: Island 5')
     else
-      Island5:Set('âŒ: Island 5' )end
+      Island5:Set('🌴: Island 5' )end
             end
         end)
 end)
@@ -12457,7 +12457,7 @@ S:AddToggle("Auto Buy Abilities", false, function(t)
     end
 end)
 
-S:AddSeperator("Ã¢â€ºÂµ Boats Ã¢â€ºÂµ")
+S:AddSeperator("Boats")
 
 BoatList = {
     "Pirate Sloop",
@@ -12656,7 +12656,7 @@ end)
 
     ------------Bone------------------
     
-    S:AddSeperator("Ã°Å¸Â¦Â´ BonesÃ°Å¸Â¦Â´")
+    S:AddSeperator("Bones")
     
     S:AddButton("Buy Surprise [ $50 Bone ]",function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("Bones","Buy",1,1)
@@ -12664,7 +12664,7 @@ end)
     
     ------------Stat------------------
     
-    S:AddSeperator("Ã°Å¸â€œÅ  Fragments Ã°Å¸â€œÅ ")
+    S:AddSeperator("Fragments")
 
 S:AddButton("Reset Stats (Use 2.5K Fragments)", function()
     game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BlackbeardReward","Refund","1")
@@ -12676,7 +12676,7 @@ S:AddButton("Random Race (Use 3K Fragments)", function()
 	game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("BlackbeardReward","Reroll","2")
 end)
     --------------Accessories-----------------
-    	S:AddSeperator("Ã¢Å¡â„¢Ã¯Â¸Â Accessories Ã¢Å¡â„¢Ã¯Â¸Â")
+    	S:AddSeperator("Accessories")
 	S:AddButton("Black Cape [ $50,000 Beli ]",function()
 		local args = {
 			[1] = "BuyItem",
