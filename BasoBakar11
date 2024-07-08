@@ -3836,7 +3836,7 @@ NguyenTien:AddSeperator("Information Developer")
 NguyenTien:AddLabel("Owner: Medusa Script")
 NguyenTien:AddLabel("Support Code: BOTUNA ")
 NguyenTien:AddLabel("Ui: Bocah Tua Nakal")
-NguyenTien:AddLabel("Thank You For Assisting Me With The\n Script Interface!")
+NguyenTien:AddLabel("If you like script brutality\n please subscribe to my YouTube channel")
 
 NguyenTien:AddSeperator("Join Community")
 NguyenTien:AddButton("Discord Sever",function()
