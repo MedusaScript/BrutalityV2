@@ -100,7 +100,6 @@ function AllowRunServiceBind.OnInvoke(args)
     CoreGui:SetCore("SendNotification", {
         Title = "Brutality Chest🔥",
         Text = "Auto Legendary Item",
-        Text = "By: Medusa Script",
         Icon = "rbxassetid://16058297648",
         Duration = math.huge,
         Callback = AllowRunServiceBind,
@@ -125,8 +124,7 @@ end)
 local CoreGui = game:GetService("StarterGui")
 CoreGui:SetCore("SendNotification", {
     Title = "Brutality Chest🔥",
-    Text = "Auto Legendary Item",
-    Text = "By: Medusa Script",
+    Text = "By : Medusa Script",
     Icon = "rbxassetid://16058297648",
     Duration = math.huge,
     Callback = AllowRunServiceBind,
