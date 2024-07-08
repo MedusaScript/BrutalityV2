@@ -1,4 +1,32 @@
+getgenv().Config = {
 
+    ["StartFarmChest"] = true,
+
+    ["Team"] = "Marines",
+
+    ["TimeReset"] = 5, -- No Edit
+
+    ["White Screen"] = false,
+
+    ["Stop The God's Chalice"] = true,
+
+    ["Stop The Fist of Darkness"] = true,
+
+    ["HopServer"] = {
+
+        ["Enable"] = true,
+
+        ["BypassServer"] = true,
+
+        ["Region"] = "Singapore"
+
+    },
+
+    ["Server Discord"] = "https://discord.gg/mFzWdBUn45"
+
+}
+
+repeat wait() until game:IsLoaded()
 highChestOnly = true
 godsChalicSniper = false
 repeat task.wait(4) until game:IsLoaded()
