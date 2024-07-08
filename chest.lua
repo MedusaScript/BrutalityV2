@@ -22,7 +22,7 @@ getgenv().Config = {
 
     },
 
-    ["Server Discord"] = "https://discord.gg/mFzWdBUn45"
+    ["Server Discord"] = "https://discord.gg/medusascript"
 
 }
 
