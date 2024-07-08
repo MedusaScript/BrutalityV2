@@ -289,7 +289,7 @@ local function MakeDraggable(topbarobject, object)
 end
 
 local Update = {}
-local pfp = "https://create.roblox.com/store/asset/18322439556/medusa"
+local pfp = "https://create.roblox.com/store/asset/18395460493/medusascript2"
 
 function Update:Window(text,logo,keybind)
     local osfunc = {}
