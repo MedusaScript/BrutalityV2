@@ -98,8 +98,8 @@ function AllowRunServiceBind.OnInvoke(args)
     end
     local CoreGui = game:GetService("StarterGui")
     CoreGui:SetCore("SendNotification", {
-        Title = "BRUTALITY CHEST - Get LegendaryItem",
-        Text = "Auto God Challice,FOD - Made By: Medusa Script",
+        Title = "BRUTALITY CHEST Get Legendary Item",
+        Text = "Auto God Challice & FOD - Made By: Medusa Script",
         Icon = "rbxassetid://16058297648",
         Duration = math.huge,
         Callback = AllowRunServiceBind,
@@ -123,8 +123,8 @@ end)
 
 local CoreGui = game:GetService("StarterGui")
 CoreGui:SetCore("SendNotification", {
-    Title = "BRUTALITY CHEST - Get LegendaryItem",
-    Text = "Auto God Chalice,FOD - Made By: Medusa Script",
+    Title = "BRUTALITY CHEST Get Legendary Item",
+    Text = "Auto God Chalice & FOD - Made By: Medusa Script",
     Icon = "rbxassetid://16058297648",
     Duration = math.huge,
     Callback = AllowRunServiceBind,
