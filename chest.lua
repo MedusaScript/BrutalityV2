@@ -25,7 +25,6 @@ getgenv().Config = {
     ["Server Discord"] = "https://discord.gg/medusascript"
 
 }
-
 repeat wait() until game:IsLoaded()
 highChestOnly = true
 godsChalicSniper = false
