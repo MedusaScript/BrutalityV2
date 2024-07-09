@@ -46,21 +46,21 @@ end
 	game.StarterGui:SetCore("SendNotification", {
 		Title = "Medusa Script Notification", 
 		Text = "Loading Script...",
-		Icon = "http://www.roblox.com/asset/?id=14334760790",
+		Icon = "http://www.roblox.com/asset/?id=16058297648",
 		Duration = 1
 	})
 	wait(0.3)
 	game.StarterGui:SetCore("SendNotification", {
 		Title = "Medusa Script Notification", 
 		Text = "Loading Whitelest...",
-		Icon = "http://www.roblox.com/asset/?id=14334760790",
+		Icon = "http://www.roblox.com/asset/?id=16058297648",
 		Duration = 2
 	})
 wait(0.2)
 	game.StarterGui:SetCore("SendNotification", {
 		Title = "Medusa Script Notification", 
 		Text = "BRUTALITY X MEDUSA SCRIPT",
-		Icon = "http://www.roblox.com/asset/?id=14334760790",
+		Icon = "http://www.roblox.com/asset/?id=16058297648",
 		Duration = 2
 	})
 	wait(0.1)
@@ -1188,7 +1188,7 @@ function library:CreateWindow(options, ...)
 				toggle.Position = UDim2.fromScale(0.0308237672, 0.165842205)
 				toggle.Selectable = true
 				toggle.Size = UDim2.fromOffset(12, 12)
-				toggle.Image = "rbxassetid://16058297648"
+				toggle.Image = "rbxassetid://2454009026"
 				toggle.ImageColor3 = library.colors.bottomGradient
 				local colored_toggle_ImageColor3 = {toggle, "ImageColor3", "bottomGradient"}
 				colored[1 + #colored] = colored_toggle_ImageColor3
@@ -1204,7 +1204,7 @@ function library:CreateWindow(options, ...)
 				toggleInner.Position = UDim2.fromScale(0.5, 0.5)
 				toggleInner.Selectable = true
 				toggleInner.Size = UDim2.new(1, -4, 1, -4)
-				toggleInner.Image = "rbxassetid://16058297648"
+				toggleInner.Image = "rbxassetid://2454009026"
 				toggleInner.ImageColor3 = library.colors.bottomGradient
 				local colored_toggleInner_ImageColor3 = {toggleInner, "ImageColor3", "bottomGradient"}
 				colored[1 + #colored] = colored_toggleInner_ImageColor3
@@ -1805,7 +1805,7 @@ function library:CreateWindow(options, ...)
 					button.Position = UDim2.new(0.031, offset, 0.166)
 					button.Selectable = true
 					button.Size = UDim2.fromOffset(28, 18)
-					button.Image = "rbxassetid://16058297648"
+					button.Image = "rbxassetid://2454009026"
 					button.ImageColor3 = library.colors.bottomGradient
 					local colored_button_ImageColor3 = {button, "ImageColor3", "bottomGradient"}
 					colored[1 + #colored] = colored_button_ImageColor3
@@ -1822,7 +1822,7 @@ function library:CreateWindow(options, ...)
 					buttonInner.Position = UDim2.fromScale(0.5, 0.5)
 					buttonInner.Selectable = true
 					buttonInner.Size = UDim2.new(1, -4, 1, -4)
-					buttonInner.Image = "rbxassetid://16058297648"
+					buttonInner.Image = "rbxassetid://2454009026"
 					buttonInner.ImageColor3 = library.colors.bottomGradient
 					local colored_buttonInner_ImageColor3 = {buttonInner, "ImageColor3", "bottomGradient"}
 					colored[1 + #colored] = colored_buttonInner_ImageColor3
@@ -2058,7 +2058,7 @@ function library:CreateWindow(options, ...)
 				textbox.Position = UDim2.fromScale(0.031, 0.48)
 				textbox.Selectable = true
 				textbox.Size = UDim2.fromOffset(206, 18)
-				textbox.Image = "rbxassetid://16058297648"
+				textbox.Image = "rbxassetid://2454009026"
 				textbox.ImageColor3 = library.colors.bottomGradient
 				local colored_textbox_ImageColor3 = {textbox, "ImageColor3", "bottomGradient"}
 				colored[1 + #colored] = colored_textbox_ImageColor3
@@ -2073,7 +2073,7 @@ function library:CreateWindow(options, ...)
 				textboxInner.Position = UDim2.fromScale(0.5, 0.5)
 				textboxInner.Selectable = true
 				textboxInner.Size = UDim2.new(1, -4, 1, -4)
-				textboxInner.Image = "rbxassetid://16058297648"
+				textboxInner.Image = "rbxassetid://2454009026"
 				textboxInner.ImageColor3 = library.colors.bottomGradient
 				colored[1 + #colored] = {textboxInner, "ImageColor3", "bottomGradient"}
 				realTextbox.Name = "realTextbox"
@@ -2670,7 +2670,7 @@ function library:CreateWindow(options, ...)
 				slider.Position = UDim2.fromScale(0.031, 0.48)
 				slider.Selectable = true
 				slider.Size = (usetextbox and UDim2.fromOffset(156, 18)) or UDim2.fromOffset(206, 18)
-				slider.Image = "rbxassetid://16058297648"
+				slider.Image = "rbxassetid://2454009026"
 				slider.ImageColor3 = library.colors.bottomGradient
 				local colored_slider_ImageColor3 = {slider, "ImageColor3", "bottomGradient"}
 				colored[1 + #colored] = colored_slider_ImageColor3
@@ -2685,7 +2685,7 @@ function library:CreateWindow(options, ...)
 				sliderInner.Position = UDim2.fromScale(0.5, 0.5)
 				sliderInner.Selectable = true
 				sliderInner.Size = UDim2.new(1, -4, 1, -4)
-				sliderInner.Image = "rbxassetid://16058297648"
+				sliderInner.Image = "rbxassetid://2454009026"
 				sliderInner.ImageColor3 = library.colors.bottomGradient
 				colored[1 + #colored] = {sliderInner, "ImageColor3", "bottomGradient"}
 				sliderColored.Name = "sliderColored"
@@ -2696,7 +2696,7 @@ function library:CreateWindow(options, ...)
 				sliderColored.BorderSizePixel = 0
 				sliderColored.Selectable = true
 				sliderColored.Size = UDim2.fromScale(((startingValue or minValue) - minValue) / (maxValue - minValue), 1)
-				sliderColored.Image = "rbxassetid://16058297648"
+				sliderColored.Image = "rbxassetid://2454009026"
 				sliderColored.ImageColor3 = darkenColor(library.colors.main, 2.5)
 				colored[1 + #colored] = {sliderColored, "ImageColor3", "main", 2.5}
 				sliderHeadline.Name = "sliderHeadline"
@@ -2769,7 +2769,7 @@ function library:CreateWindow(options, ...)
 					textbox.Position = UDim2.new(1, -54, 0.48)
 					textbox.Selectable = true
 					textbox.Size = UDim2.fromOffset(43, 18)
-					textbox.Image = "rbxassetid://16058297648"
+					textbox.Image = "rbxassetid://2454009026"
 					textbox.ImageColor3 = library.colors.bottomGradient
 					local colored_textbox_ImageColor3 = {textbox, "ImageColor3", "bottomGradient"}
 					colored[1 + #colored] = colored_textbox_ImageColor3
@@ -2784,7 +2784,7 @@ function library:CreateWindow(options, ...)
 					textboxInner.Position = UDim2.fromScale(0.5, 0.5)
 					textboxInner.Selectable = true
 					textboxInner.Size = UDim2.new(1, -4, 1, -4)
-					textboxInner.Image = "rbxassetid://16058297648"
+					textboxInner.Image = "rbxassetid://2454009026"
 					textboxInner.ImageColor3 = library.colors.bottomGradient
 					colored[1 + #colored] = {textboxInner, "ImageColor3", "bottomGradient"}
 					realTextbox.Name = "realTextbox"
@@ -3067,7 +3067,7 @@ function library:CreateWindow(options, ...)
 				dropdown.Position = UDim2.fromScale(0.027, 0.45)
 				dropdown.Selectable = true
 				dropdown.Size = UDim2.fromOffset(206, 18)
-				dropdown.Image = "rbxassetid://16058297648"
+				dropdown.Image = "rbxassetid://2454009026"
 				dropdown.ImageColor3 = library.colors.bottomGradient
 				local colored_dropdown_ImageColor3 = {dropdown, "ImageColor3", "bottomGradient"}
 				colored[1 + #colored] = colored_dropdown_ImageColor3
@@ -3082,7 +3082,7 @@ function library:CreateWindow(options, ...)
 				dropdownInner.Position = UDim2.fromScale(0.5, 0.5)
 				dropdownInner.Selectable = true
 				dropdownInner.Size = UDim2.new(1, -4, 1, -4)
-				dropdownInner.Image = "rbxassetid://16058297648"
+				dropdownInner.Image = "rbxassetid://2454009026"
 				dropdownInner.ImageColor3 = library.colors.bottomGradient
 				colored[1 + #colored] = {dropdownInner, "ImageColor3", "bottomGradient"}
 				dropdownToggle.Name = "dropdownToggle"
@@ -3133,7 +3133,7 @@ function library:CreateWindow(options, ...)
 				dropdownHolderFrame.Selectable = true
 				dropdownHolderFrame.Size = UDim2.fromOffset(206, 22)
 				dropdownHolderFrame.Visible = false
-				dropdownHolderFrame.Image = "rbxassetid://16058297648"
+				dropdownHolderFrame.Image = "rbxassetid://2454009026"
 				dropdownHolderFrame.ImageColor3 = library.colors.bottomGradient
 				colored[1 + #colored] = {dropdownHolderFrame, "ImageColor3", "bottomGradient"}
 				dropdownHolderInner.Name = "dropdownHolderInner"
@@ -7382,7 +7382,7 @@ local PepsiUi = library:CreateWindow({
         Image = "rbxassetid://7483871523",
         Info = "MADE BY MEDUSA SCRIPT",
         Background = {
-            Asset = "rbxassetid://14334760790"
+            Asset = "rbxassetid://16058297648"
         }
     }
 })
