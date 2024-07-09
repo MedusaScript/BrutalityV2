@@ -44,22 +44,22 @@ end
         until game.Players.LocalPlayer.Team ~= nil and game:IsLoaded()
     end
 	game.StarterGui:SetCore("SendNotification", {
-		Title = "Koben x Hub Notification", 
+		Title = "Medusa Script Notification", 
 		Text = "Loading Script...",
 		Icon = "http://www.roblox.com/asset/?id=14334760790",
 		Duration = 1
 	})
 	wait(0.3)
 	game.StarterGui:SetCore("SendNotification", {
-		Title = "Koben x Hub Notification", 
+		Title = "Medusa Script Notification", 
 		Text = "Loading Whitelest...",
 		Icon = "http://www.roblox.com/asset/?id=14334760790",
 		Duration = 2
 	})
 wait(0.2)
 	game.StarterGui:SetCore("SendNotification", {
-		Title = "Koben x Hub Notification", 
-		Text = "BRUTALITY KAITUN X MEDUSA SCRIPT",
+		Title = "Medusa Script Notification", 
+		Text = "BRUTALITY X MEDUSA SCRIPT",
 		Icon = "http://www.roblox.com/asset/?id=14334760790",
 		Duration = 2
 	})
@@ -69,7 +69,7 @@ if game.CoreGui:FindFirstChild("PepsiUi") then
 end
 
 local library = {
-	WorkspaceName = "BRUTALITY KAITUN X MEDUSA SCRIPT",
+	WorkspaceName = "BRUTALITY X MEDUSA SCRIPT",
 	flags = {},
 	signals = {},
 	objects = {},
@@ -84,19 +84,19 @@ local library = {
 		easingDirection = Enum.EasingDirection.Out
 	},
 	colors = {
-		main = Color3.fromRGB(255, 17, 0),
-		background = Color3.fromRGB(40, 40, 40),
+		main = Color3.fromRGB(0, 255, 0),
+		background = Color3.fromRGB(0, 0, 0),
 		outerBorder = Color3.fromRGB(15, 15, 15),
-		innerBorder = Color3.fromRGB(255, 17, 0),
+		innerBorder = Color3.fromRGB(0, 255, 0),
 		topGradient = Color3.fromRGB(35, 35, 35),
 		bottomGradient = Color3.fromRGB(29, 29, 29),
 		sectionBackground = Color3.fromRGB(35, 34, 34),
-		section = Color3.fromRGB(255, 17, 0),
+		section = Color3.fromRGB(0, 255, 0),
 		otherElementText = Color3.fromRGB(129, 127, 129),
 		elementText = Color3.fromRGB(147, 145, 147),
 		elementBorder = Color3.fromRGB(20, 20, 20),
 		selectedOption = Color3.fromRGB(55, 55, 55),
-		unselectedOption = Color3.fromRGB(40, 40, 40),
+		unselectedOption = Color3.fromRGB(0, 0, 0),
 		hoveredOptionTop = Color3.fromRGB(65, 65, 65),
 		unhoveredOptionTop = Color3.fromRGB(50, 50, 50),
 		hoveredOptionBottom = Color3.fromRGB(45, 45, 45),
@@ -7377,10 +7377,10 @@ end
 
 
 local PepsiUi = library:CreateWindow({
-    Name = "Koben x Hub Utimate Kaitan Script",
+    Name = "Brutality Hub X Kaitun",
     Theme = {
         Image = "rbxassetid://7483871523",
-        Info = "KOBEN X HUB PAID SCRIPT",
+        Info = "MADE BY MEDUSA SCRIPT",
         Background = {
             Asset = "rbxassetid://14334760790"
         }
@@ -7391,11 +7391,11 @@ local Genaral = PepsiUi:CreateTab({
     Name = "Genaral"
 })
 local StartKaitan = Genaral:CreateSection({
-    Name = "[ Start Kaitan ]",
+    Name = "[ Start Kaitun ]",
     Side = "Right"
 })
 local Stutas = StartKaitan:AddLabel({
-    Name = "Stutas : "
+    Name = "Status : "
 })
 
 task.spawn(
@@ -7404,9 +7404,9 @@ task.spawn(
             function()
                 while wait() do
 if _G.AutoSuperhuman == true then
-	Stutas:Set("Stutas : Auto Superhuman")
+	Stutas:Set("Status : Auto Superhuman")
 elseif _G.AutoSuperhuman == false then
-	Stutas:Set("Stutas : ")
+	Stutas:Set("Status : ")
 end
 end
 end
@@ -8603,7 +8603,7 @@ local Time = Genaral:CreateSection({
     Side = "Left"
 })
 Time:AddLabel({
-    Name = "[ KOBEN X HUB Paid Script ]"
+    Name = "[ Made By Medusa Script]"
 })
 local Time = Time:AddLabel({
     Name = "Time"
