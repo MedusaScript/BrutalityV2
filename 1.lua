@@ -4128,7 +4128,7 @@ if game.PlaceId == 4520749081 or game.PlaceId == 6381829480 or game.PlaceId == 5
         return Tabs
     end
 
-    local win = Flux:Window("REVIVED HUB", "King Legacy", _G.ToggleKey, Enum.KeyCode.RightControl)
+    local win = Flux:Window("BRUTALITY HUB", "King Legacy", _G.ToggleKey, Enum.KeyCode.RightControl)
 
 
     local tgls = win:Tab("Auto Farm", "")
