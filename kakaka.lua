@@ -2471,28 +2471,9 @@ function BTP(p)
 
 --------------------------------------------------------------------------------------------------------------------------------------------
 ---Close UI
-local ToggleUI = Instance.new("ScreenGui")
-local ToggleButton = Instance.new("TextButton")
-local ToggleButtonHUI = Instance.new("UICorner")
-ToggleUI.Name = "ToggleUI"
-ToggleUI.Parent = game.CoreGui
-ToggleUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
-ToggleButton.Name = "ToggleButton"
-ToggleButton.Parent = ToggleUI
-ToggleButton.BackgroundColor3 = Color3.fromRGB(30,20,20)
-ToggleButton.BackgroundTransparency = 0.1
-ToggleButton.BorderSizePixel = 0
-ToggleButton.Position = UDim2.new(0.120833337, 0, 0.0952890813, 0)
-ToggleButton.Size = UDim2.new(0, 50, 0, 50)
-ToggleButton.Font = Enum.Font.SourceSans
-ToggleButton.Text = "Open|Close"
-ToggleButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-ToggleButton.TextSize = 14.000
-ToggleButton.Draggable = true
-ToggleButton.MouseButton1Click:Connect(function()
-	game:GetService("VirtualInputManager"):SendKeyEvent(true,Enum.KeyCode.End,false,game)
-end)
+-- tombol on of script
+local SlayerzUI_MobileToggle = loadstring(game:HttpGet("https://raw.githubusercontent.com/x2-Neptune/SlayerzUI/main/MBToggle.script"))()
+SlayerzUI_MobileToggle:Create("rbxassetid://16058297648") -- Image Id
 --------------------------------------------------------------------------------------------------------------------------------------------
 --Remove Effect
 if game:GetService("ReplicatedStorage").Effect.Container:FindFirstChild("Death") then
@@ -6936,7 +6917,7 @@ spawn(function()
         elseif game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709143733" then
             Hop()
             Fluent:Notify({
-                Title = "Fai Fao Hub",
+                Title = "BRUTALITY HUB",
                 Content = "Turn Off Find Full Moon...",
                 SubContent = "", -- Optional
                 Duration = 5 -- Set to nil to make the notification not disappear
@@ -6944,7 +6925,7 @@ spawn(function()
         elseif game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709150401" then
             Hop()
             Fluent:Notify({
-                Title = "Fai Fao Hub",
+                Title = "BRUTALITY HUB",
                 Content = "Hop...",
                 SubContent = "", -- Optional
                 Duration = 5 -- Set to nil to make the notification not disappear
@@ -6952,7 +6933,7 @@ spawn(function()
         elseif game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709149680" then
             Hop()
             Fluent:Notify({
-                Title = "Fai Fao Hub",
+                Title = "BRUTALITY HUB",
                 Content = "Hop...",
                 SubContent = "", -- Optional
                 Duration = 5 -- Set to nil to make the notification not disappear
