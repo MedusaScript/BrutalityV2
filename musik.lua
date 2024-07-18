@@ -1,4 +1,3 @@
-game:GetService("StarterGui")
 function play_kill_effect(value)
     task.defer(function()
         local bell = game:GetObjects("rbxassetid://17519762269")[1]
