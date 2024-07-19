@@ -1,12 +1,3 @@
-local local_player = Players.LocalPlayer
-local camera = workspace.CurrentCamera
-
-local nurysium_Data = nil
-local hit_Sound = nil
-
-local closest_Entity = nil
-local parry_remote = nil
-
 getgenv().aura_Enabled = true
 getgenv().hit_sound_Enabled = true
 getgenv().hit_effect_Enabled = true
