@@ -1,12 +1,3 @@
-function initializate(dataFolder_name: string)
-	local nurysium_Data = Instance.new('Folder', game:GetService('CoreGui'))
-	nurysium_Data.Name = dataFolder_name
-
-	hit_Sound = Instance.new('Sound', nurysium_Data)
-	hit_Sound.SoundId = 'rbxassetid://6607204501'
-	hit_Sound.Volume = 10
-end
-
 getgenv().aura_Enabled = false
 getgenv().hit_sound_Enabled = false
 getgenv().hit_effect_Enabled = false
