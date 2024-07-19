@@ -9,6 +9,33 @@ getgenv().shaders_effect_Enabled = false
 getgenv().ai_Enabled = false
 getgenv().spectate_Enabled = false
 
+task.defer(function()
+	game:GetService("RunService").Heartbeat:Connect(function()
+
+		if not local_player.Character then
+			return
+		end
+
+		if getgenv().self_effect_Enabled then
+			local effect = game:GetObjects("rbxassetid://17519530107")[1]
+
+			effect.Name = 'nurysium_efx'
+
+			if local_player.Character.PrimaryPart:FindFirstChild('nurysium_efx') then
+				return
+			end
+
+			effect.Parent = local_player.Character.PrimaryPart
+		else
+
+			if local_player.Character.PrimaryPart:FindFirstChild('nurysium_efx') then
+				local_player.Character.PrimaryPart['nurysium_efx']:Destroy()
+			end
+		end
+
+	end)
+end)
+
 local Services = {
 	game:GetService('AdService'),
 	game:GetService('SocialService')
