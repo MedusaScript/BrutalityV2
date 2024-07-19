@@ -376,3 +376,51 @@ task.spawn(function()
 		end)
 	end)
 end)
+-- aura
+local aura = {
+	can_parry = true,
+	is_spamming = true,
+
+	parry_Range = 0,
+	spam_Range = 0,  
+	hit_Count = 0,
+
+	hit_Time = tick(),
+	ball_Warping = tick(),
+	is_ball_Warping = true,
+	last_target = nil
+}
+-- shader
+task.defer(function()
+	while task.wait(1) do
+		if getgenv().shaders_effect_Enabled then
+			TweenService:Create(game:GetService("Lighting").Bloom, TweenInfo.new(4), {
+				Size = 100,
+				Intensity = 2.1
+			}):Play()
+		else
+			TweenService:Create(game:GetService("Lighting").Bloom, TweenInfo.new(3), {
+				Size = 3,
+				Intensity = 1
+			}):Play()
+		end
+	end
+end)
+
+ReplicatedStorage.Remotes.ParrySuccess.OnClientEvent:Connect(function()
+	if getgenv().hit_sound_Enabled then
+		hit_Sound:Play()
+	end
+
+	if getgenv().hit_effect_Enabled then
+		local hit_effect = game:GetObjects("rbxassetid://17407244385")[1]
+
+		hit_effect.Parent = Nurysium_Util.getBall()
+		hit_effect:Emit(3)
+
+		task.delay(5, function()
+			hit_effect:Destroy()
+		end)
+
+	end
+end)
