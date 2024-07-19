@@ -1,11 +1,10 @@
 getgenv().aura_Enabled = true
 getgenv().hit_sound_Enabled = true
 getgenv().hit_effect_Enabled = true
-getgenv().night_mode_Enabled = false
 getgenv().trail_Enabled = true
 getgenv().self_effect_Enabled = true
 getgenv().kill_effect_Enabled = true
-getgenv().shaders_effect_Enabled = false
+getgenv().shaders_effect_Enabled = true
 getgenv().ai_Enabled = true
 getgenv().spectate_Enabled = true
 
@@ -18,55 +17,8 @@ function initializate(dataFolder_name: string)
 	hit_Sound.Volume = 6
 end
 
-local function get_closest_entity(Object: Part)
-	task.spawn(function()
-		local closest
-		local max_distance = math.huge
+--// kill effect
 
-		for index, entity in workspace.Alive:GetChildren() do
-			if entity.Name ~= Players.LocalPlayer.Name then
-				local distance = (Object.Position - entity.HumanoidRootPart.Position).Magnitude
-
-				if distance < max_distance then
-					closest_Entity = entity
-					max_distance = distance
-				end
-
-			end
-		end
-
-		return closest_Entity
-	end)
-end
-
-local function get_center()
-	for _, object in workspace.Map:GetDescendants() do
-		if object.Name == 'BALLSPAWN' then
-			return object
-		end
-	end
-end
---// Thanks Aries for this.
-function resolve_parry_Remote()
-	for _, value in Services do
-		local temp_remote = value:FindFirstChildOfClass('RemoteEvent')
-
-		if not temp_remote then
-			continue
-		end
-
-		if not temp_remote.Name:find('\n') then
-			continue
-		end
-
-		parry_remote = temp_remote
-	end
-end
-
-function walk_to(position)
-	local_player.Character.Humanoid:MoveTo(position)
-end
-----
 function play_kill_effect(Part)
 	task.defer(function()
 		local bell = game:GetObjects("rbxassetid://17519762269")[1]
@@ -133,7 +85,9 @@ task.defer(function()
 
 	end)
 end)
+
 --// trail
+
 task.defer(function()
 	game:GetService("RunService").Heartbeat:Connect(function()
 
@@ -168,7 +122,61 @@ task.defer(function()
 
 	end)
 end)
+
+--// shaders
+
+task.defer(function()
+	while task.wait(1) do
+		if getgenv().shaders_effect_Enabled then
+			TweenService:Create(game:GetService("Lighting").Bloom, TweenInfo.new(4), {
+				Size = 100,
+				Intensity = 2.1
+			}):Play()
+		else
+			TweenService:Create(game:GetService("Lighting").Bloom, TweenInfo.new(3), {
+				Size = 3,
+				Intensity = 1
+			}):Play()
+		end
+	end
+end)
+
+ReplicatedStorage.Remotes.ParrySuccess.OnClientEvent:Connect(function()
+	if getgenv().hit_sound_Enabled then
+		hit_Sound:Play()
+	end
+
+	if getgenv().hit_effect_Enabled then
+		local hit_effect = game:GetObjects("rbxassetid://17407244385")[1]
+
+		hit_effect.Parent = Nurysium_Util.getBall()
+		hit_effect:Emit(3)
+
+		task.delay(5, function()
+			hit_effect:Destroy()
+		end)
+
+	end
+end)
+
+--// aura
+
+local aura = {
+	can_parry = true,
+	is_spamming = false,
+
+	parry_Range = 0,
+	spam_Range = 0,  
+	hit_Count = 0,
+
+	hit_Time = tick(),
+	ball_Warping = tick(),
+	is_ball_Warping = false,
+	last_target = nil
+}
+
 --// AI
+
 task.defer(function()
     game:GetService("RunService").Heartbeat:Connect(function()
         if getgenv().ai_Enabled and workspace.Alive:FindFirstChild(local_player.Character.Name) then
@@ -375,52 +383,4 @@ task.spawn(function()
 			    aura.can_parry = true
 		end)
 	end)
-end)
--- aura
-local aura = {
-	can_parry = true,
-	is_spamming = true,
-
-	parry_Range = 0,
-	spam_Range = 0,  
-	hit_Count = 0,
-
-	hit_Time = tick(),
-	ball_Warping = tick(),
-	is_ball_Warping = true,
-	last_target = nil
-}
--- shader
-task.defer(function()
-	while task.wait(1) do
-		if getgenv().shaders_effect_Enabled then
-			TweenService:Create(game:GetService("Lighting").Bloom, TweenInfo.new(4), {
-				Size = 100,
-				Intensity = 2.1
-			}):Play()
-		else
-			TweenService:Create(game:GetService("Lighting").Bloom, TweenInfo.new(3), {
-				Size = 3,
-				Intensity = 1
-			}):Play()
-		end
-	end
-end)
-
-ReplicatedStorage.Remotes.ParrySuccess.OnClientEvent:Connect(function()
-	if getgenv().hit_sound_Enabled then
-		hit_Sound:Play()
-	end
-
-	if getgenv().hit_effect_Enabled then
-		local hit_effect = game:GetObjects("rbxassetid://17407244385")[1]
-
-		hit_effect.Parent = Nurysium_Util.getBall()
-		hit_effect:Emit(3)
-
-		task.delay(5, function()
-			hit_effect:Destroy()
-		end)
-
-	end
 end)
