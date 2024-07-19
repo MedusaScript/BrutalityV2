@@ -8,10 +8,7 @@ getgenv().kill_effect_Enabled = true
 getgenv().shaders_effect_Enabled = false
 getgenv().ai_Enabled = true
 getgenv().spectate_Enabled = true
-local Services = {
-	game:GetService('AdService'),
-	game:GetService('SocialService')
-}
+
 function initializate(dataFolder_name: string)
 	local nurysium_Data = Instance.new('Folder', game:GetService('CoreGui'))
 	nurysium_Data.Name = dataFolder_name
@@ -49,7 +46,6 @@ local function get_center()
 		end
 	end
 end
-
 --// Thanks Aries for this.
 function resolve_parry_Remote()
 	for _, value in Services do
@@ -137,9 +133,7 @@ task.defer(function()
 
 	end)
 end)
-
 --// trail
-
 task.defer(function()
 	game:GetService("RunService").Heartbeat:Connect(function()
 
@@ -174,38 +168,7 @@ task.defer(function()
 
 	end)
 end)
-----
-task.defer(function()
-    RunService.RenderStepped:Connect(function()
-        if getgenv().spectate_Enabled then
-
-            local self = Nurysium_Util.getBall()
-
-            if not self then
-                return
-            end
-
-            workspace.CurrentCamera.CFrame = workspace.CurrentCamera.CFrame:Lerp(CFrame.new(workspace.CurrentCamera.CFrame.Position, self.Position), 1.5)
-        end
-    end)
-end)
-----
-local aura = {
-	can_parry = true,
-	is_spamming = false,
-
-	parry_Range = 0,
-	spam_Range = 0,  
-	hit_Count = 0,
-
-	hit_Time = tick(),
-	ball_Warping = tick(),
-	is_ball_Warping = false,
-	last_target = nil
-}
-
 --// AI
-
 task.defer(function()
     game:GetService("RunService").Heartbeat:Connect(function()
         if getgenv().ai_Enabled and workspace.Alive:FindFirstChild(local_player.Character.Name) then
