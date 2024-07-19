@@ -4,7 +4,7 @@ function initializate(dataFolder_name: string)
 
 	hit_Sound = Instance.new('Sound', nurysium_Data)
 	hit_Sound.SoundId = 'rbxassetid://6607204501'
-	hit_Sound.Volume = 6
+	hit_Sound.Volume = 10
 end
 
 getgenv().aura_Enabled = false
