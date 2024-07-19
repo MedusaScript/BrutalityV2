@@ -1,4 +1,13 @@
-getgenv().aura_Enabled = false
+local local_player = Players.LocalPlayer
+local camera = workspace.CurrentCamera
+
+local nurysium_Data = nil
+local hit_Sound = nil
+
+local closest_Entity = nil
+local parry_remote = nil
+
+getgenv().aura_Enabled = true
 getgenv().hit_sound_Enabled = true
 getgenv().hit_effect_Enabled = true
 getgenv().night_mode_Enabled = false
@@ -7,8 +16,11 @@ getgenv().self_effect_Enabled = true
 getgenv().kill_effect_Enabled = true
 getgenv().shaders_effect_Enabled = false
 getgenv().ai_Enabled = true
-getgenv().spectate_Enabled = false
-
+getgenv().spectate_Enabled = true
+local Services = {
+	game:GetService('AdService'),
+	game:GetService('SocialService')
+}
 function initializate(dataFolder_name: string)
 	local nurysium_Data = Instance.new('Folder', game:GetService('CoreGui'))
 	nurysium_Data.Name = dataFolder_name
