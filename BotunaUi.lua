@@ -36,7 +36,7 @@ function Alert:create(desc)
     Image.BackgroundTransparency = 1.000
     Image.Position = UDim2.new(0, 8, 0, 8)
     Image.Size = UDim2.new(0, 45, 0, 45)
-    Image.Image = "rbxassetid://18837557481" 
+    Image.Image = "rbxassetid://18837227406" 
     
     Title.Parent = Frame
     Title.BackgroundColor3 = Color3.fromRGB(39, 232, 9)
@@ -44,7 +44,7 @@ function Alert:create(desc)
     Title.Position = UDim2.new(0, 55, 0, 14)
     Title.Size = UDim2.new(0, 10, 0, 20)
     Title.Font = Enum.Font.GothamBold
-    Title.Text = "Brutality Hub" --min gaming hub
+    Title.Text = "RelzHub On Top" --min gaming hub
     Title.TextColor3 = Color3.fromRGB(255, 255, 255)
     Title.TextSize = 16.000
     Title.TextXAlignment = Enum.TextXAlignment.Left
